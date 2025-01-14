@@ -25,7 +25,7 @@
 
     <section class="hero">
         <div class="hero-body-background">
-            <div class="hero-body-background-div"></div>
+            <div class="hero-body-background-div" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
             <div style="text-align: center; z-index: 1; margin-top: 60px">
                 <!-- <p class="sansfont acmefont shadowtext make-font" style="color: #FFFFFF; display: inline; margin-right: 20pt; font-weight: 600">Make</p> -->
                 <p class="word1 shakefont shadowtext" style="margin-right: -10px; color: #FFC5C5;font-family:PressStart2P">G</p>
@@ -133,12 +133,23 @@
             <div class="column auto"></div>
             <div class="column is-half">
                 <div class="hero-body-long-video" style="display: flex; flex-direction: column; justify-content: space-around;">
+                    <!-- 视频 -->
                     <video muted autoplay="autoplay" loop="loop" width="90%" preload controls>
                         <source src="./videos/GameFactory-v5-1280p.mov" type="video/mp4">
                     </video>
+
+                    <!-- 新增的文字 -->
+                    <div style="text-align: center; font-size: 16px; color: #333333; margin-top: 15px; line-height: 1.5;">
+                        <b>TL;DR:</b> We present <b><span style="color: #4FACFA;">GameFactory</span></b>, a <b>generalizable world model</b> that learns from a small-scale dataset of Minecraft game videos.
+                        By leveraging the prior knowledge of a pretrained video diffusion model, it can create new games in an open domain.
+                    </div>
+    
+                    <!-- 原本的文字 -->
                     <div style="text-align: center; font-size: 18px; color: #666666; margin-top: 10px;">
                         (Loading all videos may take some time, thanks for your patience!)
                     </div>
+    
+                    
                 </div>
             </div>
             <div class="column auto"></div>
@@ -161,23 +172,39 @@
 
     
 
-    <section class="hero">
-        <div class="hero-body-subtitle-light"  style="display: block">
-            <div class="columns is-centered has-text-centered">
-                <div class="container is-max-maxwidth">
-                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
-                        Gallery
+    <section class="hero" style="margin: -20px 0; padding: 20px 0;">
+        <div class="hero-body" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <!-- Gallery Title -->
+            <div class="title is-2 sansfont" style="font-family: 'Acme'; color: #595959; font-size: 68px; margin-bottom: 15px;">
+                Gallery
+            </div>
+    
+            <!-- Content Section: Image and Text -->
+            <div class="columns" style="display: flex; align-items: center; gap: 15px;">
+                <!-- Left: Image -->
+                <div class="column" style="flex: 0 0 auto;">
+                    <img src="static/assets/layout.jpg" alt="example image" style="max-width: 180px; height: auto; display: block;">
+                </div>
+    
+                <!-- Right: Text -->
+                <div class="column" style="flex: 0 0 auto; text-align: left;">
+                    <div class="note-font" style="font-style: italic; line-height: 1.4; font-size: 14px;">
+                        <p>In the videos, green-lit keys indicate key presses.</p>
+                        <p>Mouse movements (<img src="static/assets/mouse.png" alt="mouse" style="height: 14px; vertical-align: middle;">) represent changes in view angles:</p>
+                        <p>horizontal movement for yaw and vertical movement for pitch.</p>
                     </div>
-                    <div class="note-font" style="margin-top: -10pt; font-style: italic;">
-                        <!-- GameFactory can generalize action control capabilities learned from a small-scale Minecraft dataset to open-domain video generation.<br>
-                        It also generates action-controllable long gaming videos through autoregressive generation. <br> -->
-                        In the videos, green-lit keys indicate key presses. <br>Mouse movements (<img src="static/assets/mouse.png" alt="mouse" style="height: 20px; vertical-align: middle;">) represent changes in view angles: horizontal movement for yaw and vertical movement for pitch.
-                    </div>
-                    
                 </div>
             </div>
         </div>
     </section>
+    
+    
+    
+     
+    
+    
+
+    
 
     <div style="border: #999999 1px solid;"></div>
 
@@ -491,19 +518,30 @@
     </section>
     
 
-    <section class="hero">
-        <div class="hero-body-subtitle-light"  style="display: block">
-            <div class="columns is-centered has-text-centered">
-                <div class="container is-max-maxwidth">
-                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
-                        More Results
-                    </div>
-                    <div class="note-font" style="margin-top: -10pt; font-style: italic;">
-                        In the videos, green-lit keys indicate key presses. <br>Mouse movements (<img src="static/assets/mouse.png" alt="mouse" style="height: 20px; vertical-align: middle;">) represent changes in view angles: horizontal movement for yaw and vertical movement for pitch.
+
+    <section class="hero" style="margin: -20px 0; padding: 20px 0;">
+        <div class="hero-body" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <!-- Gallery Title -->
+            <div class="title is-2 sansfont" style="font-family: 'Acme'; color: #595959; font-size: 68px; margin-bottom: 15px;">
+                More Results
+            </div>
+    
+            <!-- Content Section: Image and Text -->
+            <div class="columns" style="display: flex; align-items: center; gap: 15px;">
+                <!-- Left: Image -->
+                <div class="column" style="flex: 0 0 auto;">
+                    <img src="static/assets/layout.jpg" alt="example image" style="max-width: 180px; height: auto; display: block;">
+                </div>
+    
+                <!-- Right: Text -->
+                <div class="column" style="flex: 0 0 auto; text-align: left;">
+                    <div class="note-font" style="font-style: italic; line-height: 1.4; font-size: 14px;">
+                        <p>In the videos, green-lit keys indicate key presses.</p>
+                        <p>Mouse movements (<img src="static/assets/mouse.png" alt="mouse" style="height: 14px; vertical-align: middle;">) represent changes in view angles:</p>
+                        <p>horizontal movement for yaw and vertical movement for pitch.</p>
                     </div>
                 </div>
             </div>
-    
         </div>
     </section>
 
