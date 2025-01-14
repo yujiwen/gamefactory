@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="GameFactory: Creating New Games with Generative Interactive Videos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameFactory</title>
+    <!-- <link rel='icon' type='image/png' href='static/assets/logo_plus.png'> -->
+    <link rel="stylesheet" href="./static/css/own.min.css">
+    <link rel="stylesheet" href="./static/css/custom.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Shantell+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" rel="stylesheet"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./static/css/index.min.css">
+    <script defer src="./static/js/index.min.js"></script>
+    
+</head>
+
+
+<body>
+
+    <section class="hero">
+        <div class="hero-body-background">
+            <div class="hero-body-background-div"></div>
+            <div style="text-align: center; z-index: 1; margin-top: 60px">
+                <!-- <p class="sansfont acmefont shadowtext make-font" style="color: #FFFFFF; display: inline; margin-right: 20pt; font-weight: 600">Make</p> -->
+                <p class="word1 shakefont shadowtext" style="margin-right: -10px; color: #FFC5C5;font-family:PressStart2P">G</p>
+                <p class="word2 shakefont shadowtext" style="margin-right: -2px; color: #ecd1aa;font-family:PressStart2P">a</p>
+                <p class="word3 shakefont shadowtext" style="margin-right: -2px; color: #fe8e8e;font-family:PressStart2P">m</p>
+                <p class="word4 shakefont shadowtext" style="margin-right: -10px; color: #98d4e6;font-family:PressStart2P">e</p>
+                <p class="word5 shakefont shadowtext" style="margin-right: -10px; color: #9fd8ca;font-family:PressStart2P">F</p>
+                <p class="word6 shakefont shadowtext" style="margin-right: -10px; color: #a4d6dd;font-family:PressStart2P">a</p>
+                <p class="word7 shakefont shadowtext" style="margin-right: -10px; color: #dcdda4;font-family:PressStart2P">c</p>
+                <p class="word1 shakefont shadowtext" style="margin-right: -10px; color: #FFC5C5;font-family:PressStart2P">t</p>
+                <p class="word2 shakefont shadowtext" style="margin-right: -2px; color: #ecd1aa;font-family:PressStart2P">o</p>
+                <p class="word3 shakefont shadowtext" style="margin-right: -2px; color: #fe8e8e;font-family:PressStart2P">r</p>
+                <p class="word4 shakefont shadowtext" style="margin-right: -10px; color: #98d4e6;font-family:PressStart2P">y</p>
+    
+                <!-- <p class="word6 shakefont shadowtext" style="color: #9fd8ca;font-family:PressStart2P">S</p> -->
+                <!-- <p class="sansfont acmefont shadowtext make-font" style="color: #FFFFFF; display: inline; margin-left: 15pt; font-weight: 600">Dance</p> -->
+    
+                <p class="acmefont shadowtext high-font" style="color: #FFFFFF;">
+                    Creating New Games with Generative Interactive Videos
+                </p>
+                <!-- <p class="author-block sansfont shadowtext" style="color: #FFFFFF; font-size: 1.8em;">
+                    CVPR 2024
+                </p> -->
+            </div>
+            <div class="columns is-centered" style="z-index: 1; margin-top: -80px">
+                <div class="column has-text-centered ">
+                    <div class="publication-authors shadowtext authors-font" style="color: #FFFFFF;font-weight: bold;font-family:DMSerifText;">
+                        <span class="author-block sansfont"><a href="https://vvictoryuki.github.io/website/" style="color: inherit !important; text-decoration: none !important;">Jiwen Yu</a><sup>1*†</sup>&nbsp;&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont"><a href="https://github.com/IranQin" style="color: inherit !important; text-decoration: none !important;">Yiran Qin</a><sup>1*</sup>&nbsp;&nbsp;&nbsp;</span><br>
+                        <span class="author-block sansfont"><a href="https://xinntao.github.io/" style="color: inherit !important; text-decoration: none !important;">Xintao Wang</a><sup>2✉</sup>&nbsp;&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont"><a href="https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en" style="color: inherit !important; text-decoration: none !important;">Pengfei Wan</a><sup>2</sup>&nbsp;&nbsp;&nbsp;</span> 
+                        <span class="author-block sansfont"><a href="https://openreview.net/profile?id=~Di_ZHANG3" style="color: inherit !important; text-decoration: none !important;">Di Zhang</a><sup>2</sup>&nbsp;&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont"><a href="https://xh-liu.github.io/" style="color: inherit !important; text-decoration: none !important;">Xihui Liu</a><sup>1✉</sup>&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+    
+                    <div class="publication-authors shadowtext authors-font" style="color: #FFFFFF;font-weight: bold;font-family:DMSerifText; margin-bottom: 4pt;">
+                        <span class="author-block sansfont"><sup>1</sup>The University of Hong Kong</span>
+                        <span class="author-block sansfont">&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont"><sup>2</sup>Kuaishou Technology</span>
+                    </div>
+
+                    <div class="publication-authors shadowtext authors-font" style="color: #FFFFFF;font-weight: bold;font-family:DMSerifText; margin-bottom: 4pt;">
+                        <span class="author-block sansfont"><sup>†</sup>Intern at KwaiVGI, Kuaishou Technology</span>
+                        <span class="author-block sansfont">&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont"><sup>*</sup>Equal Contribution</span>
+                        <span class="author-block sansfont">&nbsp;&nbsp;</span>
+                        <span class="author-block sansfont"><sup>✉</sup>Corresponding Authors</span>
+                    </div>
+    
+                    <div class="column has-text-centered" style="font-family:DMSerifText">
+                        <div class="publication-links">
+                            <span class="link-block">
+                                <a href="http://arxiv.org/abs/xxxx.xxxxx" class="external-link button is-normal is-rounded light-btn btn-font">
+                                <span class="icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </span>
+                                <span class="sansfont">Paper</span>
+                                </a>
+                            </span>
+    
+                            <span class="link-block">
+                                <a href="https://github.com/KwaiVGI/GameFactory" class="external-link button is-normal is-rounded light-btn btn-font">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span class="sansfont">Github</span>
+                                </a>
+                            </span>
+
+                            <span class="link-block">
+                                <a href="https://huggingface.co/datasets/KwaiVGI/GameFactory-Dataset" class="external-link button is-normal is-rounded light-btn btn-font">
+                                <span class="icon">
+                                    <i class="fa fa-database" aria-hidden="true"></i>
+                                </span>
+                                <span class="sansfont">Dataset</span>
+                                </a>
+                            </span>
+
+                            <span class="link-block">
+                                <a href="static/assets/bib.txt" class="external-link button is-normal is-rounded light-btn btn-font">
+                                <span class="icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </span>
+                                <span class="sansfont">Cite</span>
+                                </a>
+                            </span>
+    
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+        </div>
+    </section>
+
+
+    
+
+    <section class="hero">
+        <div class="columns" style="background: linear-gradient(#ffffff, #ffffff);">
+            <div class="column auto"></div>
+            <div class="column is-half">
+                <div class="hero-body-long-video" style="display: flex; flex-direction: column; justify-content: space-around;">
+                    <video muted autoplay="autoplay" loop="loop" width="90%" preload controls>
+                        <source src="./videos/GameFactory-v5-1280p.mov" type="video/mp4">
+                    </video>
+                    <div style="text-align: center; font-size: 18px; color: #666666; margin-top: 10px;">
+                        (Loading all videos may take some time, thanks for your patience!)
+                    </div>
+                </div>
+            </div>
+            <div class="column auto"></div>
+        </div>
+    </section>
+
+    <!-- <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+                    <div class="content has-text-justified">
+                        <p>
+                            (Loading all videos may take some time, thanks for your patience!)
+                        </p>
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section> -->
+
+    
+
+    <section class="hero">
+        <div class="hero-body-subtitle-light"  style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
+                        Gallery
+                    </div>
+                    <div class="note-font" style="margin-top: -10pt; font-style: italic;">
+                        <!-- GameFactory can generalize action control capabilities learned from a small-scale Minecraft dataset to open-domain video generation.<br>
+                        It also generates action-controllable long gaming videos through autoregressive generation. <br> -->
+                        In the videos, green-lit keys indicate key presses. <br>Mouse movements (<img src="static/assets/mouse.png" alt="mouse" style="height: 20px; vertical-align: middle;">) represent changes in view angles: horizontal movement for yaw and vertical movement for pitch.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="border: #999999 1px solid;"></div>
+
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+                    <div class="content has-text-justified">
+                        <div class="columns is-multiline"></div>
+                        <div class="note-font" style="
+                            margin-top: 20pt;
+                            text-align: center;
+                            font-size: 1.2em;
+                            font-weight: 600;
+                            color: #333333;
+                            letter-spacing: 0.5px;
+                            margin-bottom: 20pt;">
+                            Open-Domain Generalized Results
+                        </div>
+                    </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/1.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                Prompt: "Walking through a scorching lava field in first person perspective, feeling the intense heat radiating from the glowing molten rivers and watching the heat waves distort the air as the ground beneath cracks and smolders with fiery energy."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/2.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "Walking through a narrow canyon in first person perspective, with steep rock walls towering on either side, sunlight barely filtering through the gap above, and the sound of rushing water echoing through the confined space as you carefully navigate the rocky terrain."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/3.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "A large Saint Bernard walks steadily across the vast, snow-covered expanse of a mountain range. The rugged, towering peaks in the distance create a dramatic backdrop, while the cold mountain air seems to amplify the serene stillness of the scene."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/4.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "A tan and white dog lounges comfortably on a large, dark-colored dog bed, positioned in the middle of a sprawling grassy field. Its tongue lolls out in a relaxed expression, and the open sky stretches endlessly above, bordered by distant trees that frame the serene, pastoral setting."
+                            </p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/5.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                Prompt: "Walking through a serene bamboo forest in first person perspective, with towering green stalks gently swaying in the breeze, sunlight filtering through the leaves to create intricate patterns on the forest floor, and the soft rustling sound of bamboo leaves adding to the tranquil atmosphere."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/6.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "Running along a cliffside path in a tropical island in first person perspective, with turquoise waters crashing against the rocks far below, the salty scent of the ocean carried by the breeze, and the sound of distant waves blending with the calls of seagulls as the path twists and turns along the jagged cliffs."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/7.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "Standing in the middle of a colorful canyon in first person perspective, surrounded by towering layered rock formations glowing in shades of red, orange, and gold under the midday sun, with the faint sound of wind whistling through narrow crevices and the dry heat of the desert pressing against your skin."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/8.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "A young bear stands next to a large tree in a grassy meadow, its dark fur catching the soft daylight. The bear seems poised, observing its surroundings in a tranquil landscape, with rolling hills and sparse trees dotting the background under a pale blue sky."
+                            </p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/9.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "A giant panda rests peacefully under a blooming cherry blossom tree, its black and white fur contrasting beautifully with the delicate pink petals. The ground is lightly sprinkled with fallen blossoms, and the tranquil setting is framed by the soft hues of the blossoms and the grassy field surrounding the tree."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/10.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "A lion strides confidently along a dusty, rugged path, its golden coat gleaming under the sunlight. The muscles along its powerful frame ripple with each step, embodying strength and grace. Sparse vegetation and dry terrain stretch around, emphasizing the raw beauty of the wilderness."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/11.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "A tall tree stands proudly in a sprawling green meadow, its wide branches casting gentle shadows on the grassy terrain. Surrounding hills and distant patches of vegetation create a peaceful, open landscape under a clear blue sky."
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/gallery/12.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                prompt: "A vibrant lionfish hovers near the entrance of a shadowy underwater cave, its long, spiky fins spreading out like a delicate fan. The surrounding seabed is dimly lit, emphasizing the lionfish's striking colors against the dark, rugged backdrop of the reef."
+                            </p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                            <div class="column is-one-quarter">
+                                <video controls>
+                                <source src="./videos/gallery/13.mp4" type="video/mp4">
+                                
+                                </video>
+                                <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                    prompt: "An emerald green velvet accent chair sits prominently in the center of a minimalist room, its rich texture contrasting with the neutral tones of the floor and walls. Behind it, a tall bookshelf with wooden panels adds depth to the elegant, understated setting."
+                                </p>
+                            </div>
+                            <div class="column is-one-quarter">
+                                <video controls>
+                                <source src="./videos/gallery/14.mp4" type="video/mp4">
+                                
+                                </video>
+                                <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                    prompt: "A sleek black horse moves gracefully across an open field, its mane flowing in the gentle breeze. The golden glow of the evening sun bathes the landscape, casting long shadows over the swaying grass and highlighting the horse's powerful frame against the vast, serene backdrop."
+                                </p>
+                            </div>
+                            <div class="column is-one-quarter">
+                                <video controls>
+                                <source src="./videos/gallery/15.mp4" type="video/mp4">
+                                
+                                </video>
+                                <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                    prompt: "A striking white horse with a long, flowing mane stands calmly beside a rustic wooden fence. Its coat gleams under the clear blue sky, while the surrounding open field stretches into the distance, adding to the serene and picturesque scene."
+                                </p>
+                            </div>
+                            <div class="column is-one-quarter">
+                                <video controls>
+                                <source src="./videos/gallery/16.mp4" type="video/mp4">
+                                
+                                </video>
+                                <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                    prompt: "A baby squirrel peeks out from a small hollow in the rock, its tiny eyes bright with curiosity. The warm tones of the rugged stone frame the delicate creature, as sunlight gently highlights its soft fur, creating a moment of quiet charm in nature."
+                                </p>
+                            </div>
+                            </div>
+                    
+                    <div class="content has-text-justified">
+                        <div class="columns is-multiline"></div>
+                        <div class="note-font" style="
+                            margin-top: 20pt;
+                            text-align: center;
+                            font-size: 1.2em;
+                            font-weight: 600;
+                            color: #333333;
+                            letter-spacing: 0.5px;
+                            margin-bottom: 20pt;">
+                            Action-Controlled Long Video Results
+                        </div>
+                    </div>
+
+                    <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/long/1.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                Example #1
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/long/2.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                Example #2
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/long/3.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                Example #3
+                            </p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/long/4.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">
+                                Example #4
+                            </p>
+                        </div>
+                        </div>
+
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body-subtitle-light"  style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
+                        Our Method
+                    </div>
+                    <div class="note-font" style="margin-top: -10pt; font-style: italic;">
+                        <p>
+                            We present <b><span style="color: #4FACFA;">GameFactory</span></b>, a <b>generalizable world model</b> that learns from a small-scale dataset of Minecraft game videos. <br>
+                            By leveraging the prior knowledge of a pretrained video diffusion model, it can create new games in an open domain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <div style="border: #999999 1px solid;"></div>
+
+    <div class="content has-text-justified" style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
+        <p>Our work consists of several key components and innovations:</p>
+    
+        <p><b>Overview:</b> As shown in <b>Figure 1</b>, <b><span style="color: #4FACFA;">GameFactory</span></b> builds upon pre-trained video generation models, extending them with a pluggable action control module. This design effectively leverages both <b><span style="color: #FF4444;">large-scale unlabeled data</span></b> and <b><span style="color: #FF4444;">small-scale high-quality Minecraft action data</span></b>.</p>
+    
+        <p><b>Action Control Module:</b> Illustrated in <b>Figure 2</b>, our module integrates with Diffusion Transformer blocks through <b><span style="color: #FF4444;">distinct control mechanisms</span></b> for mouse and keyboard inputs. To address granularity mismatch between action signals and frame latents, we implement <b><span style="color: #FF4444;">group operations</span></b>. A <b><span style="color: #FF4444;">sliding window mechanism</span></b> is adopted to handle delayed action effects (e.g., jump).</p>
+    
+        <p><b>Multi-Phase Training Strategy:</b> <b>Figure 3</b> outlines our four-phase training approach for scene generalization. Starting with open-domain pretraining, followed by game-specific style learning, action control training, and finally enabling open-domain action-controlled generation, this strategy ensures both <b><span style="color: #FF4444;">action control capability</span></b> while preserving <b><span style="color: #FF4444;">open-domain scene generation ability</span></b>.</p>
+    
+        <p><b>Autoregressive Generation:</b> As demonstrated in <b>Figure 4</b>, our autoregressive generation mechanism creates continuous gameplay by using previous frames as conditions for generating new ones.</p>
+    </div>
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            
+            <div class="content has-text-centered">
+                <figure>
+                    <img src="static/assets/1.jpg" alt="Image 1 description" style="max-width: 50%; height: auto;">
+                    <figcaption>
+                        Figure 1: GameFactory overview. The <span style="color: rgb(145, 171, 223)">blue section</span> shows pre-trained model's generation ability, <br>
+                        while the <span style="color: rgb(171, 214, 142)">green section</span> shows the pluggable action control module.
+                    </figcaption>
+                </figure>
+
+            
+
+                <figure>
+                    <img src="static/assets/2.jpg" alt="Image 2 description" style="max-width: 70%; height: auto;">
+                    <figcaption>
+                        Figure 2: Action Control Module architecture. It integrates into transformer blocks with separate mechanisms for mouse and keyboard inputs. <br>
+                        Action sequences are grouped to handle temporal compression and delayed effects.
+                    </figcaption>
+                </figure>
+
+
+                <figure>
+                    <img src="static/assets/3.jpg" alt="Image 3 description" style="max-width: 80%; height: auto;">
+                    <figcaption>
+                        Figure 3: Multi-phase training pipeline. <b>Phase 0</b>: pretrain on open-domain data; <b>Phase 1</b>: finetune for game style;<br>
+                        <b>Phase 2</b>: train action control;<b>Phase 3</b>: generate action-controlled open-domain content.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="static/assets/4.jpg" alt="Image 4 description" style="max-width: 50%; height: auto;">
+                    <figcaption>
+                        Figure 4: Autoregressive video generation process. Training uses (k+1) initial frames as conditions to predict remaining frames,<br>
+                        while inference iteratively uses latest frames to generate new ones.
+                    </figcaption>
+                </figure>
+        </div>
+        </div>
+    </section>
+    
+
+    <section class="hero">
+        <div class="hero-body-subtitle-light"  style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
+                        More Results
+                    </div>
+                    <div class="note-font" style="margin-top: -10pt; font-style: italic;">
+                        In the videos, green-lit keys indicate key presses. <br>Mouse movements (<img src="static/assets/mouse.png" alt="mouse" style="height: 20px; vertical-align: middle;">) represent changes in view angles: horizontal movement for yaw and vertical movement for pitch.
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <div style="border: #999999 1px solid;"></div>
+
+
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+
+                    <div class="content has-text-justified">
+                        <div class="columns is-multiline"></div>
+                        <div class="note-font" style="
+                            margin-top: 20pt;
+                            text-align: center;
+                            font-size: 1.2em;
+                            font-weight: 600;
+                            color: #333333;
+                            letter-spacing: 0.5px;
+                            margin-bottom: 20pt;">
+                            Open-Domain Generalized Results
+                        </div>
+                    </div>
+
+                    <div class="content has-text-justified">
+                        <div class="columns is-multiline"></div>
+                        <div class="note-font" style="margin-top: 10pt; font-size: 16px; color: #666666;">
+                            Prompt: "Climbing through a dense, overgrown swamp in first person perspective, with thick vines draping down from towering trees, the humid air filled with the buzzing of insects, and murky water pooling at your feet as you push forward through the tangled vegetation."
+                        </div>
+                    </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/w.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">W: Forward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/s.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">S: Backward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/sh.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Shift: Sneak</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/ct.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Ctrl: Sprint</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/a.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">A: Move Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/d.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">D: Move Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/j2.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 25th, 50th frame</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/j3.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 0th, 10th, 30th, 50th frame</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/ur.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/dl.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/ul.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od1/dr.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Right</p>
+                        </div>
+                        </div>
+
+
+
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+                    <div class="content has-text-justified">
+                        
+                        <div class="columns is-multiline"></div>
+                        <div class="note-font" style="margin-top: 10pt; font-size: 16px; color: #666666;">
+                            Prompt: "Walking along the edge of an enormous glacier in first person perspective, with towering ice cliffs shimmering in the bright sunlight, frozen winds whipping past, and the sound of cracking ice reverberating through the stillness of the arctic expanse."
+                        </div>
+                    </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/w.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">W: Forward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/s.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">S: Backward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/sh.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Shift: Sneak</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/ct.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Ctrl: Sprint</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/a.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">A: Move Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/d.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">D: Move Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/j2.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 15th, 45th frame</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/j3.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 0th, 10th, 30th, 50th frame</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/ur.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/dl.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/ul.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od2/dr.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Right</p>
+                        </div>
+                        </div>
+
+
+
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+                    <div class="content has-text-justified">
+                        
+                        <div class="columns is-multiline"></div>
+                        <div class="note-font" style="margin-top: 10pt; font-size: 16px; color: #666666;">
+                            Prompt: "Walking through a wheat field at sunrise in first person perspective, with golden stalks swaying gently in the morning breeze, the warmth of the first rays of sunlight brushing your face, and the soft rustle of the crop accompanied by the distant calls of birds waking in the horizon."
+                        </div>
+                    </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/w.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">W: Forward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/s.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">S: Backward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/sh.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Shift: Sneak</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/ct.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Ctrl: Sprint</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/a.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">A: Move Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/d.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">D: Move Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/j2.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 0th, 25th, 50th frame</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/j3.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 0th, 10th, 30th, 50th frame</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/ur.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/dl.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/ul.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od4/dr.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Right</p>
+                        </div>
+                        </div>
+
+
+
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+                    <div class="content has-text-justified">
+                        
+                        <div class="columns is-multiline"></div>
+                        <div class="note-font" style="margin-top: 10pt; font-size: 16px; color: #666666;">
+                            Prompt: "In a maple forest in first person perspective, surrounded by towering trees with fiery red and orange foliage, the light filtering through the leaves casting warm patterns on the ground, and the distant sound of birds chirping blending with the rustling of leaves in the breeze."
+                        </div>
+                    </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/w.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">W: Forward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/s.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">S: Backward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/sh.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Shift: Sneak</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/ct.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Ctrl: Sprint</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/a.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">A: Move Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/d.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">D: Move Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/j2.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 15th, 30th, 45th, 60th frame</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/j3.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 0th, 15th, 30th, 50th frame</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/ur.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/dl.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/ul.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/od5/dr.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Right</p>
+                        </div>
+                        </div>
+
+
+
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="hero">
+        <div class="hero-body-subtitle-light"  style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
+                        In-Domain Minecraft Results
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+    </section> -->
+
+    
+    
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+
+                    <div class="content has-text-justified">
+                        <div class="columns is-multiline"></div>
+                        <div class="note-font" style="
+                            margin-top: 20pt;
+                            text-align: center;
+                            font-size: 1.2em;
+                            font-weight: 600;
+                            color: #333333;
+                            letter-spacing: 0.5px;
+                            margin-bottom: 20pt;">
+                            In-Domain Minecraft Results
+                        </div>
+                    </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/w.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">W: Forward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/s.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">S: Backward</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/sh.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Shift: Sneak</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/ct.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Ctrl: Sprint</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/a.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">A: Move Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/d.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">D: Move Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/j2.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 0th, 15th, 45th frame</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/j4.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Space: Jump at 0th, 15th, 30th, 45th, 60th frame</p>
+                        </div>
+                        </div>
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/ur.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Right</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/dl.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/ul.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Up Left</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/id/dr.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p  class="has-text-centered" style="font-size: 15px; font-family: 'Arial', sans-serif;">Mouse movements: Down Right</p>
+                        </div>
+                        </div>
+
+
+
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="hero">
+        <div class="hero-body-subtitle-light"  style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
+                        Action-Controlled Long Video Results
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+    </section> -->
+
+    
+    
+    <!-- <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+
+                        <div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/long/1.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered">Example #1</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/long/2.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered">Example #2</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/long/3.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered">Example #3</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <video controls>
+                            <source src="./videos/long/4.mp4" type="video/mp4">
+                            
+                            </video>
+                            <p class="has-text-centered">Example #4</p>
+                        </div>
+                        </div>
+
+                        
+
+
+
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="hero">
+        <div class="hero-body-subtitle-light"  style="display: block">
+            <div class="columns is-centered has-text-centered">
+                <div class="container is-max-maxwidth">
+                    <div class="title is-2 sansfont" style="font-family:'Acme';color:#595959; font-size: 68px;">
+                        Our Method
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-centered">
+                    <div class="content has-text-justified">
+                        <p>
+                            We present <b><span style="color: #4FACFA;">GameFactory</span></b>, a <b>generalizable world model</b> that learns from a small-scale dataset of Minecraft game videos. By leveraging the prior knowledge of a pretrained video diffusion model, it can create new games in an open domain.
+                        </p>
+                    </div>
+                </h4>
+            </div>
+        </div>
+    </section> -->
+
+
+<footer class="footer" style="padding: 2em;">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
