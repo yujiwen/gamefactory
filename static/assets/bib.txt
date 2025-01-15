@@ -2,6 +2,6 @@
       title={GameFactory: Creating New Games with Generative Interactive Videos}, 
       author={Yu, Jiwen and Qin, Yiran and Wang, Xintao and Wan, Pengfei and Zhang, Di and Liu, Xihui},
       year={2025},
-      eprint={xxxxxxxx},
+      eprint={2501.08325},
       archivePrefix={arXiv},
 }
